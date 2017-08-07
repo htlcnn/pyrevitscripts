@@ -18,7 +18,9 @@ def get_family_parameter_value(familydoc, name):
 
 def set_family_parameter_value(familydoc, param, value):
     famman = familydoc.FamilyManager
-    famman.Set(param, value)
+    with rpw.db.Transaction('Set parameter', doc=familydoc):
+        famman.Set(param, value)
+
 
 def get_family_parameter(familydoc, name):
     famman = familydoc.FamilyManager
@@ -50,7 +52,7 @@ def main():
     foundation_famdoc = doc.EditFamily(foundation.unwrap())
     pile_famdoc = doc.EditFamily(pile.unwrap())
 
-    saveas_path = os.path.expanduser(r'~')
+    saveas_path = os.path.expanduser('~')
     save_options = SaveAsOptions()
     save_options.OverwriteExistingFile = True
 
@@ -65,15 +67,6 @@ def main():
         # http://thebuildingcoder.typepad.com/blog/2014/08/activate-your-family-symbol-before-using-it.html
         if not pile_family_symbol.IsActive:
             pile_family_symbol.Activate()
-    length_param = get_family_parameter(foundation_famdoc, 'Length')
-    width_param = get_family_parameter(foundation_famdoc, 'Width')
-    thickness_param = get_family_parameter(foundation_famdoc, 'Foundation Thickness')
-    length = pile_spacing_along_length*(piles_along_length-1) + 2 * length_cover
-    width = pile_spacing_along_length*(piles_along_width-1) + 2 * width_cover
-    with rpw.db.Transaction('Set Cap Length, Width, Thickness', doc=foundation_famdoc):
-        set_family_parameter_value(foundation_famdoc, length_param, length / 304.8)
-        set_family_parameter_value(foundation_famdoc, width_param, width / 304.8)
-        set_family_parameter_value(foundation_famdoc, thickness_param, thickness / 304.8)
 
     ### Place piles
     first_x = -pile_spacing_along_length*(piles_along_length-1)/2
@@ -102,12 +95,29 @@ def main():
         for param_name in parameters:
             associate_family_parameter(foundation_famdoc, pile, param_name)
 
+
+    length_param = get_family_parameter(foundation_famdoc, 'Length')
+    width_param = get_family_parameter(foundation_famdoc, 'Width')
+    thickness_param = get_family_parameter(foundation_famdoc, 'Foundation Thickness')
+    length = pile_spacing_along_length*(piles_along_length-1) + 2 * length_cover
+    width = pile_spacing_along_length*(piles_along_width-1) + 2 * width_cover
+    set_family_parameter_value(foundation_famdoc, length_param, length / 304.8)
+    set_family_parameter_value(foundation_famdoc, width_param, width / 304.8)
+    set_family_parameter_value(foundation_famdoc, thickness_param, thickness / 304.8)
+    set_family_parameter_value(foundation_famdoc, get_family_parameter(foundation_famdoc, 'D'), pile_width/304.8)
+
     new_filename = ff.values['new_foundation_family_name'] or 'new_{}'.format(foundation_famdoc.Title)
     foundation_famdoc.SaveAs(os.path.join(saveas_path, '{}.rfa'.format(new_filename)),
                             save_options)
+
+    foundation_rfa_path = foundation_famdoc.PathName
+    with rpw.db.Transaction('Load foundation rfa into project', doc=foundation_famdoc):
+        foundation_famdoc.LoadFamily(doc)
     foundation_famdoc.Close()
 
-    rpw.ui.forms.Alert('Finished creating foundation')
+    rpw.ui.forms.Alert('Finished creating foundation and loaded into project {}'.format(foundation_rfa_path))
+
+
 
 
 foundations = rpw.db.Collector(of_class='Family',

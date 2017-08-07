@@ -16,3 +16,6 @@ Pile Cap must have parameters: 'Length' (horizontal), 'Width' (vertical), 'Found
 All pile instances in Pile Cap family must be deleted manually before running this script.
 
 Demo video: https://www.youtube.com/watch?v=7uYuNca2Umg
+
+### [Update Stirrup Dimensions](HTL.tab/Dimension.panel/UpdateStirrupDim.pushbutton)
+Update all stirrup dimensions to Vietnamese style. Dimension type name pattern: 'UDIC Stirrup - 10a200' (contains `UDIC Stirrup` in prefix, has ` - ` as separator between prefix and suffix is diameter with spacing (`x`a`y`)
