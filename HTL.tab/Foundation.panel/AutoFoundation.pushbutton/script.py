@@ -8,7 +8,7 @@ import os
 
 clr.AddReference("RevitAPI")
 import Autodesk
-from Autodesk.Revit.DB import SaveAsOptions, Transaction
+from Autodesk.Revit.DB import SaveAsOptions, Transaction, IFamilyLoadOptions
 
 def get_family_parameter_value(familydoc, name):
     famman = familydoc.FamilyManager
@@ -56,10 +56,10 @@ def main():
     save_options = SaveAsOptions()
     save_options.OverwriteExistingFile = True
 
-    pile_famdoc.SaveAs(os.path.join(saveas_path, pile_famdoc.Title), save_options)
+    pile_famdoc.SaveAs(os.path.join(saveas_path, '{}.rfa'.format(pile_famdoc.Title)), save_options)
 
-    with rpw.db.Transaction('Load pile into foundation', doc=pile_famdoc):
-        pile_famdoc.LoadFamily(foundation_famdoc)
+    with rpw.db.Transaction('Load pile into foundation', doc=foundation_famdoc):
+        foundation_famdoc.LoadFamily(pile_famdoc.PathName)
 
     with rpw.db.Transaction('Activate pile family symbol', doc=foundation_famdoc):
         pile_family_symbol = rpw.db.Collector(of_class='FamilySymbol',
@@ -112,11 +112,10 @@ def main():
                             save_options)
 
     foundation_rfa_path = foundation_famdoc.PathName
-    with rpw.db.Transaction('Load foundation rfa into project', doc=foundation_famdoc):
-        foundation_famdoc.LoadFamily(doc)
     foundation_famdoc.Close()
 
     rpw.ui.forms.Alert('Finished creating foundation and loaded into project {}'.format(foundation_rfa_path))
+    os.startfile(foundation_rfa_path)
 
 
 
