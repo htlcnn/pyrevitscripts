@@ -58,9 +58,10 @@ def main():
 
     pile_famdoc.SaveAs(os.path.join(saveas_path, pile_famdoc.Title), save_options)
 
-    with rpw.db.Transaction('Load pile into foundation', doc=foundation_famdoc):
-        foundation_famdoc.LoadFamily(pile_famdoc.PathName)
+    with rpw.db.Transaction('Load pile into foundation', doc=pile_famdoc):
+        pile_famdoc.LoadFamily(foundation_famdoc)
 
+    with rpw.db.Transaction('Activate pile family symbol', doc=foundation_famdoc):
         pile_family_symbol = rpw.db.Collector(of_class='FamilySymbol',
                                               doc=foundation_famdoc,
                                               where=lambda x: x.FamilyName==pile.Name)[0]
