@@ -46,7 +46,7 @@ components = [Label('Cut Elements:'),
             CheckBox('join_floor', 'Sàn'),
             Button('Join')]
 
-ff = FlexForm("Join cấu kiện trong view hiện tại", components)
+ff = FlexForm("Join cấu kiện", components)
 ff.show()
 
 if ff.values:

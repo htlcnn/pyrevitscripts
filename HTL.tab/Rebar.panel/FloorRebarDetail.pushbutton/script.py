@@ -1,49 +1,6 @@
 # -*- coding: utf-8 -*-
-# from pprint import pprint
-# from scriptutils import this_script
-
-# import os
-# import clr
-# clr.AddReference('IronPython.Wpf')
-# clr.AddReference("PresentationFramework")
-# clr.AddReference('PresentationCore')
-
-# from IronPython.Modules import Wpf as wpf
-
-# from System import Uri
-# from System.Windows import Window
-# from System.Windows.Media.Imaging import BitmapImage
-# from System.IO import StringReader
-
-# script_path = '\\'.join(this_script.info.script_file.split('\\')[:-1])
-# xaml_path = os.path.join(script_path, 'xaml.xaml')
-# with open(xaml_path) as f:
-#     xaml = f.read()
-
-# class MyWindow(Window):
-#     def __init__(self):
-#         wpf.LoadComponent(self, StringReader(xaml))
-
-#     def OnLoad(self, sender, e):
-#         # self.image1.Source = os.path.join(script_path, 'icon.png')
-#         pass
-
-#     def ApplyButton_Click(self, sender, e):
-#         pass
-
-#     def ComboBox_SelectionChanged(self, sender, e):
-#         pass
-
-
-# w = MyWindow()
-# w.Title = "Auto Foundation"
-# w.Width = 300
-# img_path = BitmapImage(Uri(os.path.join(script_path, 'icon.png')))
-# w.image1.Source = img_path
-# w.image1.Width = 32
-# w.Show()
-
-
+__title__='Floor Rebar\nDetail'
+__author__='htl'
 import clr
 clr.AddReference('RevitAPI')
 import Autodesk
@@ -84,18 +41,14 @@ def place_detail():
     added_element_ids = []
     symbol = rpw.db.Collector(of_class='FamilySymbol',
                               where=lambda x: x.FamilyName=='UDIC - Floor Rebar Symbol')[0]
-
     # Pick Point
     sp = rpw.db.Collector(of_class='SketchPlane', where=lambda x: x.OwnerViewId==doc.ActiveView.Id)[0]
     plane = sp.GetPlane()
     with rpw.db.Transaction('Set Work plane'):
         new_sp = rpw.DB.SketchPlane.Create(doc, plane)
         uidoc.ActiveView.SketchPlane = new_sp
-
     rebar_id, number, spacing_text = select_rebar()
-
     point = uidoc.Selection.PickPoint('Pick point to place rebar detail')
-
     with rpw.db.Transaction():
         detail = doc.Create.NewFamilyInstance(point, symbol, doc.ActiveView)
         if detail:
@@ -113,27 +66,3 @@ while True:
         place_detail()
     except Autodesk.Revit.Exceptions.OperationCanceledException:
         break
-
-
-
-# rebar = rpw.db.Element.from_id(selection.ElementId).unwrap()
-
-# rb_curves = rebar.GetCenterlineCurves(False, False, False,
-#                             Autodesk.Revit.DB.Structure.MultiplanarOption.IncludeOnlyPlanarCurves,
-#                             0)
-
-# ca = rpw.DB.CurveArray()
-
-# for curve in rb_curves:
-#     ca.Append(curve)
-
-# with rpw.db.Transaction('Create Detail Line'):
-#     new_ca = doc.Create.NewDetailCurveArray(doc.ActiveView, ca)
-
-
-
-
-
-# print(f.FamilyCategory.Name)
-# pprint(dir(f))
-

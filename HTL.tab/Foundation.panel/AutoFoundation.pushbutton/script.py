@@ -110,11 +110,10 @@ def main():
     new_filename = ff.values['new_foundation_family_name'] or 'new_{}'.format(foundation_famdoc.Title)
     foundation_famdoc.SaveAs(os.path.join(saveas_path, '{}.rfa'.format(new_filename)),
                             save_options)
-
     foundation_rfa_path = foundation_famdoc.PathName
     foundation_famdoc.Close()
 
-    rpw.ui.forms.Alert('Finished creating foundation and loaded into project {}'.format(foundation_rfa_path))
+    rpw.ui.forms.Alert('Finished creating foundation, saved at {}'.format(foundation_rfa_path))
     os.startfile(foundation_rfa_path)
 
 
