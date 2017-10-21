@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-__title__ = 'Select Beam\nBy Name'
+__title__ = 'Select Elements\nBy UDIC Name'
 __author__ = 'htl'
 import clr
 clr.AddReference('RevitAPI')
