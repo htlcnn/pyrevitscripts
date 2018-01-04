@@ -15,6 +15,10 @@ from System.Collections.Generic import List
 
 from htl import selection
 
+uiapp = __revit__
+uidoc = uiapp.ActiveUIDocument
+app = uiapp.Application
+doc = uidoc.Document
 
 def get_faces(element):
     faces = []
@@ -97,10 +101,6 @@ def on_click(sender, e):
         textbox.IsEnabled = False
 
 def main():
-    uiapp = __revit__
-    uidoc = uiapp.ActiveUIDocument
-    app = uiapp.Application
-    doc = uidoc.Document
 
     components = [
                   CheckBox('create_elements', 'Create Formwork Elements', on_click=on_click),
