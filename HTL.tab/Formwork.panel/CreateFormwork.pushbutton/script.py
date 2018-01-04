@@ -9,7 +9,7 @@ import Autodesk
 
 import rpw
 from rpw import doc, uidoc
-from rpw.ui.forms import Label, TextBox, Button, FlexForm
+from rpw.ui.forms import Button, CheckBox, FlexForm, Label, TextBox
 from Autodesk.Revit.DB import *
 
 from System.Collections.Generic import List
@@ -88,19 +88,31 @@ def create_formwork(face, thickness, cross_solids):
         BooleanOperationsUtils.ExecuteBooleanOperationModifyingOriginalSolid(formwork, solid, BooleanOperationsType.Difference)
     return formwork, angle_text
 
+def on_click(sender, e):
+    checkbox = sender
+    grid = checkbox.Parent
+    textbox = grid.Children[2]
+    if checkbox.IsChecked:
+        textbox.IsEnabled = True
+    else:
+        textbox.IsEnabled = False
 
 def main():
-    components = [Label('Thickness (mm)'),
-                  TextBox('thickness'),
-                  Button('Create Formwork')
+    components = [
+                  CheckBox('create_elements', 'Create Formwork Elements', on_click=on_click),
+                  Label('Thickness (mm)'),
+                  TextBox('thickness', IsEnabled=False),
+                  Button('Create Formwork'),
                   ]
     ff = FlexForm('Create Formwork', components)
     ff.show()
 
     try:
         thickness = int(ff.values['thickness'])
-        if not thickness:
-            return
+        if thickness <= 0:
+            thickness = 1
+    except ValueError:
+        thickness = 1  # in case of not creating formwork elements
     except:
         return
 
@@ -118,25 +130,30 @@ def main():
         cross_solids = []
         for cross_element in cross_elements:
             cross_solids.extend(get_solids(cross_element))
+
+        # if element has multiple solids, add all solids to calculate intersection,
+        # offset direction will always be to the outside of the host face
         if len(host_solids) > 1:
             cross_solids.extend(host_solids)
 
-        host_name = element.LookupParameter('UDIC_Name').AsString()
-
-        host_category = element.Category.Name
-        if host_category == 'Structural Columns':
-            param = 'Base Level'
-        elif host_category == 'Structural Framing':
-            param = 'Reference Level'
-        elif host_category == 'Floors':
-            param = 'Level'
-        elif host_category == 'Walls':
-            param = 'Base Constraint'
-        elif host_category == 'Generic Models':
-            param = 'Level'
-        formwork_level = element.LookupParameter(param).AsValueString()
+        if ff.values['create_elements']:
+            host_name = element.LookupParameter('UDIC_Name').AsString()
+            host_category = element.Category.Name
+            if host_category == 'Structural Columns':
+                param = 'Base Level'
+            elif host_category == 'Structural Framing':
+                param = 'Reference Level'
+            elif host_category == 'Floors':
+                param = 'Level'
+            elif host_category == 'Walls':
+                param = 'Base Constraint'
+            elif host_category == 'Generic Models':
+                param = 'Level'
+            formwork_level = element.LookupParameter(param).AsValueString()
 
         with rpw.db.Transaction('Create formwork for {}'.format(element.Id)):
+            sides = []
+            bottoms = []
             for face in host_faces:
                 try:
                     formwork, angle_text = create_formwork(face, thickness, cross_solids)
@@ -146,15 +163,23 @@ def main():
                 area = formwork.Volume/(thickness/304.8)
                 if area == 0:
                     continue
-                ds = DirectShape.CreateElement(doc, ElementId(BuiltInCategory.OST_GenericModel))
-                ds.SetShape([formwork])
-                ds.LookupParameter('UDIC_Name').Set('Formwork {}'.format(element.Id))
-                ds.LookupParameter('UDIC_Formwork_Type').Set(angle_text)
-                if host_name:
-                    ds.LookupParameter('UDIC_Formwork_Hostname').Set(host_name)
-                ds.LookupParameter('UDIC_Formwork_Hostcategory').Set(host_category)
-                ds.LookupParameter('UDIC_Formwork_Level').Set(formwork_level)
-                ds.LookupParameter('UDIC_Formwork_Area').Set(area)
+                if ff.values['create_elements']:
+                    ds = DirectShape.CreateElement(doc, ElementId(BuiltInCategory.OST_GenericModel))
+                    ds.SetShape([formwork])
+                    ds.LookupParameter('UDIC_Name').Set('Formwork {}'.format(element.Id))
+                    ds.LookupParameter('UDIC_Formwork_Type').Set(angle_text)
+                    if host_name:
+                        ds.LookupParameter('UDIC_Formwork_Hostname').Set(host_name)
+                    ds.LookupParameter('UDIC_Formwork_Hostcategory').Set(host_category)
+                    ds.LookupParameter('UDIC_Formwork_Level').Set(formwork_level)
+                    ds.LookupParameter('UDIC_Formwork_Area').Set(area)
+                else:
+                    if angle_text == 'Side':
+                        sides.append(area)
+                    elif angle_text == 'Bottom':
+                        bottoms.append(area)
+                    element.LookupParameter('UDIC_FormworkArea_Side').Set(sum(sides))
+                    element.LookupParameter('UDIC_FormworkArea_Bottom').Set(sum(bottoms))
 
 
 if __name__ == '__main__':
