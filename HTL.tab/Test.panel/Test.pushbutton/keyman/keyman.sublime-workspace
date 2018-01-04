@@ -1,0 +1,1794 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"loginm",
+				"login_manager\tstatement"
+			],
+			[
+				"create",
+				"create_app\tmodule"
+			],
+			[
+				"par",
+				"partition_number\tstatement"
+			],
+			[
+				"Ad",
+				"AddReference\tfunction"
+			],
+			[
+				"Pick",
+				"PickObject\tfunction"
+			],
+			[
+				"from",
+				"from_int\tfunction"
+			],
+			[
+				"filtervalu",
+				"filter_value_provider\tstatement"
+			],
+			[
+				"PushB",
+				"PushButtonData\tclass"
+			],
+			[
+				"comp",
+				"components"
+			],
+			[
+				"IE",
+				"IExternalApplication\tmodule"
+			],
+			[
+				"cross",
+				"cross_element\tstatement"
+			],
+			[
+				"get_cro",
+				"get_crossing_elements\tfunction"
+			],
+			[
+				"Ex",
+				"ExecuteBooleanOperationModifyingOriginalSolid\tfunction"
+			],
+			[
+				"A",
+				"AddReference\tfunction"
+			],
+			[
+				"selection",
+				"selection"
+			],
+			[
+				"Boo",
+				"BooleanOperationsType\tclass"
+			],
+			[
+				"Solidcu",
+				"SolidCurveIntersectionOptions\tclass"
+			],
+			[
+				"new",
+				"new_wall\tstatement"
+			],
+			[
+				"Spatial",
+				"SpatialElementBoundaryOptions\tclass"
+			],
+			[
+				"CreateV",
+				"CreateViaOffset\tfunction"
+			],
+			[
+				"Intersec",
+				"IntersectionResultArray\tclass"
+			],
+			[
+				"elem",
+				"elements\tfunction"
+			],
+			[
+				"dis",
+				"distance\tstatement"
+			],
+			[
+				"acti",
+				"active_ws_id\tstatement"
+			],
+			[
+				"BooleanOperation",
+				"BooleanOperationsUtils\tclass"
+			],
+			[
+				"Rebar",
+				"RebarContainer"
+			],
+			[
+				"cross_fac",
+				"cross_element_faces"
+			],
+			[
+				"geo",
+				"geo_element\tstatement"
+			],
+			[
+				"hos",
+				"host_faces\tstatement"
+			],
+			[
+				"BoundingB",
+				"BoundingBoxIntersectsFilter\tclass"
+			],
+			[
+				"XP",
+				"XMLParser\tclass"
+			],
+			[
+				"HTML",
+				"HTMLParser"
+			],
+			[
+				"Fil",
+				"FileName\tstatement"
+			],
+			[
+				"J",
+				"JoinGeometryUtils"
+			],
+			[
+				"ele",
+				"elements\tfunction"
+			],
+			[
+				"bs3-col",
+				"bs3-col:9\tbs3-col-9"
+			],
+			[
+				"bs3-nav",
+				"bs3-navbar:fixed-top\tbs3-navbar-fixed-top"
+			],
+			[
+				"Elem",
+				"ElementId"
+			],
+			[
+				"element",
+				"element_ids\tfunction"
+			],
+			[
+				"para",
+				"parameters"
+			],
+			[
+				"ex",
+				"exit\tfunction"
+			],
+			[
+				"add",
+				"added_element_ids\tstatement"
+			],
+			[
+				"ad",
+				"added_element_ids\tstatement"
+			],
+			[
+				"Ff",
+				"foundation_famdoc\tstatement"
+			],
+			[
+				"Load",
+				"LoadFamily"
+			],
+			[
+				"foundad",
+				"foundation_famdoc"
+			],
+			[
+				"Fam",
+				"FamilyManager"
+			],
+			[
+				"z",
+				"z\tstatement"
+			],
+			[
+				"pilesalongl",
+				"pile_spacing_along_length"
+			],
+			[
+				"cuto",
+				"pile_cutoff"
+			],
+			[
+				"Boundi",
+				"BoundingBoxIntersectsFilter"
+			],
+			[
+				"wrti",
+				"write\tfunction"
+			],
+			[
+				"Ch",
+				"CharField\tclass"
+			],
+			[
+				"C",
+				"Columns"
+			],
+			[
+				"DF",
+				"DateField\tclass"
+			],
+			[
+				"wid",
+				"widgets"
+			],
+			[
+				"wi",
+				"widgets\timport"
+			],
+			[
+				"is",
+				"issued_by"
+			],
+			[
+				"Aj",
+				"AjaxUploadView\tclass"
+			],
+			[
+				"ME",
+				"MEDIA_URL"
+			],
+			[
+				"get",
+				"get_absolute_url"
+			],
+			[
+				"form",
+				"formhelper_class\tstatement"
+			],
+			[
+				"filte",
+				"filter_class\tstatement"
+			],
+			[
+				"Docu",
+				"DocumentTable\tclass"
+			],
+			[
+				"Sin",
+				"SingleTableView\tclass"
+			],
+			[
+				"django",
+				"django_tables2\tmodule"
+			],
+			[
+				"djan",
+				"django_tables2\tmodule"
+			],
+			[
+				"bs3-table",
+				"bs3-table:striped\tbs3-table-striped"
+			],
+			[
+				"bs3-icon",
+				"bs3-icon:glyphicon\tbs3-icon-glyphicon"
+			],
+			[
+				"Man",
+				"ManyToManyField\tclass"
+			],
+			[
+				"default",
+				"default\tFlask"
+			],
+			[
+				"ret",
+				"ret\tstatement"
+			],
+			[
+				"ve",
+				"verify_time\tparam"
+			],
+			[
+				"veri",
+				"verify_type\tparam"
+			],
+			[
+				"defaul",
+				"default_url\tstatement"
+			],
+			[
+				"check",
+				"check_output\tfunction"
+			],
+			[
+				"Ar",
+				"ArgumentParser\tclass"
+			],
+			[
+				"asc",
+				"ascii_uppercase\tstatement"
+			],
+			[
+				"as",
+				"ascii_lowercase\tstatement"
+			],
+			[
+				"pass",
+				"pass_list\tstatement"
+			],
+			[
+				"str",
+				"string\tmodule"
+			],
+			[
+				"c",
+				"choice\tstatement"
+			],
+			[
+				"pas",
+				"password\tstatement"
+			],
+			[
+				"ran",
+				"randrange\tstatement"
+			],
+			[
+				"ch",
+				"check_output\tfunction"
+			],
+			[
+				"readlin",
+				"readlines\tfunction"
+			],
+			[
+				"readl",
+				"readlines\tfunction"
+			],
+			[
+				"flas",
+				"Flask\timport"
+			],
+			[
+				"rout",
+				"route\tFlask"
+			],
+			[
+				"css",
+				"cssselect"
+			],
+			[
+				"Exce",
+				"ExcelWriter\tclass"
+			],
+			[
+				"send",
+				"send_links_to_idm"
+			],
+			[
+				"file",
+				"file_name"
+			],
+			[
+				"lec",
+				"lecture"
+			],
+			[
+				"rag",
+				"RANGE"
+			],
+			[
+				"Date",
+				"DateTimeField\tclass"
+			],
+			[
+				"Model",
+				"Model\tclass"
+			],
+			[
+				"selec",
+				"selection_get\tfunction"
+			],
+			[
+				"ne",
+				"new_filename\tstatement"
+			],
+			[
+				"getho",
+				"gethostbyname\tfunction"
+			],
+			[
+				"stuff",
+				"stuffmanage"
+			],
+			[
+				"BA",
+				"BASE_DIR\tstatement"
+			],
+			[
+				"max",
+				"max_length"
+			],
+			[
+				"w",
+				"weekday\tfunction"
+			],
+			[
+				"da",
+				"datetime\tclass"
+			],
+			[
+				"sy",
+				"system\tfunction"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "keyman/keyman/settings.py",
+			"settings":
+			{
+				"buffer_size": 3109,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "keyman/keyman/wsgi.py",
+			"settings":
+			{
+				"buffer_size": 390,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "keyman/keys/models.py",
+			"settings":
+			{
+				"buffer_size": 300,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "keyman/keys/admin.py",
+			"settings":
+			{
+				"buffer_size": 97,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"IronPython",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/User/ironpython.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Python 3.sublime-build",
+					""
+				]
+			],
+			[
+				"IronPython",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/User/ironpython.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Python 3.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/Python 3.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"venv",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/User/ironpython.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Python 3.sublime-build",
+					""
+				]
+			],
+			[
+				"venv",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 261.0,
+		"last_filter": "djrs",
+		"selected_items":
+		[
+			[
+				"djrs",
+				"Django: Run Server"
+			],
+			[
+				"djmm",
+				"Django: Make Migration"
+			],
+			[
+				"djma",
+				"Django: Migrate App"
+			],
+			[
+				"djcc",
+				"Django: Custom Command"
+			],
+			[
+				"djmd",
+				"Django: Migrate Database"
+			],
+			[
+				"djm",
+				"Django: Migrate Database"
+			],
+			[
+				"dj",
+				"Django: Migrate App"
+			],
+			[
+				"synpy",
+				"Set Syntax: Python (Django)"
+			],
+			[
+				"lp",
+				"Package Control: List Packages"
+			],
+			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
+				"djna",
+				"Django: New App"
+			],
+			[
+				"djnp",
+				"Django: New Project"
+			],
+			[
+				"migra",
+				"Django: Migrate App"
+			],
+			[
+				"djmi",
+				"Django: Migrate Database"
+			],
+			[
+				"rp",
+				"Package Control: Remove Package"
+			],
+			[
+				"dj ma",
+				"Django: Migrate App"
+			],
+			[
+				"Django:newa",
+				"Django: New App"
+			],
+			[
+				"addrepo",
+				"Package Control: Add Repository"
+			],
+			[
+				"newa",
+				"Django: New App"
+			],
+			[
+				"newpro",
+				"Django: New Project"
+			],
+			[
+				"n",
+				"Django: New Project"
+			],
+			[
+				"Django:set",
+				"Django: Set Project Interpreter"
+			],
+			[
+				"ore",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"np",
+				"Django: New Project"
+			],
+			[
+				"Django:",
+				"Django: Boilerplate"
+			],
+			[
+				"new po",
+				"Django: New Project"
+			],
+			[
+				"interpre",
+				"Django: Use Default Interpreter"
+			],
+			[
+				"ve",
+				"Django: Set Virtual Environment"
+			],
+			[
+				"newp",
+				"Django: New Project"
+			],
+			[
+				"inter",
+				"Django: Use Default Interpreter"
+			],
+			[
+				"ven",
+				"Django: Set Virtual Environment"
+			],
+			[
+				"Django:np",
+				"Django: New Project"
+			],
+			[
+				"djsi",
+				"Django: Set Project Interpreter"
+			],
+			[
+				"djansv",
+				"Django: Set Virtual Environment"
+			],
+			[
+				"django vi",
+				"Django: Set Virtual Environment"
+			],
+			[
+				"django new ",
+				"Django: New Project"
+			],
+			[
+				"djangocc",
+				"Django: Custom Command"
+			],
+			[
+				"rmp",
+				"Package Control: Remove Package"
+			],
+			[
+				"lip",
+				"Package Control: List Packages"
+			],
+			[
+				"djan",
+				"Django: Pip Freeze"
+			],
+			[
+				"django setp",
+				"Django: Set Project Interpreter"
+			],
+			[
+				"set vi",
+				"Django: Set Virtual Environment"
+			],
+			[
+				"new project",
+				"Django: New Project"
+			],
+			[
+				"djanin",
+				"Django: Set Virtual Environment"
+			],
+			[
+				"inte",
+				"Django: Set Project Interpreter"
+			],
+			[
+				"interpr",
+				"Django: Set Project Interpreter"
+			],
+			[
+				"flask",
+				"Flask: Create New App (relative to Open File)"
+			],
+			[
+				"sync#",
+				"Set Syntax: C#"
+			],
+			[
+				"tekla",
+				"Snippet: tekla"
+			],
+			[
+				"openre",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"open reou",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"build",
+				"Build With: ironpython"
+			],
+			[
+				"Snippet: ",
+				"Snippet: tekla"
+			],
+			[
+				"gittus",
+				"git: status"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"synpython",
+				"Set Syntax: Python"
+			],
+			[
+				"packali",
+				"Package Control: List Packages"
+			],
+			[
+				"push",
+				"git: push (force)"
+			],
+			[
+				"gitreb",
+				"git: rebase"
+			],
+			[
+				"jsonmi",
+				"Pretty JSON: Minify (compress) JSON"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"synjson",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"synxa",
+				"Set Syntax: XAML"
+			],
+			[
+				"builir",
+				"Build With: ironpython"
+			],
+			[
+				"gitrepo",
+				"github: open repo"
+			],
+			[
+				"synxaml",
+				"Set Syntax: XAML"
+			],
+			[
+				"Django:rs",
+				"Django: Run Server"
+			],
+			[
+				"django new",
+				"Django: New Project"
+			],
+			[
+				"gtus",
+				"git: status"
+			],
+			[
+				"gits",
+				"git: status"
+			],
+			[
+				"gitstatus",
+				"git: status"
+			],
+			[
+				":wq",
+				"BracketHighlighter: Swap Quotes"
+			],
+			[
+				"git: add",
+				"git: add (edit)"
+			],
+			[
+				"gitad",
+				"git: add (edit)"
+			],
+			[
+				"gitsta",
+				"git: status"
+			],
+			[
+				"snipcod",
+				"Snippet: coding: utf-8"
+			],
+			[
+				"gitopenrpo",
+				"github: open repo"
+			],
+			[
+				"gbr",
+				"git: branch"
+			],
+			[
+				"git pul",
+				"git: pull"
+			],
+			[
+				"gclon",
+				"git: clone"
+			],
+			[
+				"gbran",
+				"git: branch"
+			],
+			[
+				"git clone",
+				"git: clone"
+			],
+			[
+				"git push",
+				"git: push"
+			],
+			[
+				"status",
+				"git: status"
+			],
+			[
+				"git b",
+				"git: branch"
+			],
+			[
+				"branch",
+				"git: branch"
+			],
+			[
+				"syntext",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"Package Control: ip",
+				"Package Control: Install Package"
+			],
+			[
+				"synp",
+				"Set Syntax: Python"
+			],
+			[
+				"synrub",
+				"Set Syntax: Ruby"
+			],
+			[
+				"dma",
+				"Django: Migrate App"
+			],
+			[
+				"djsh",
+				"Django: Shell"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":q",
+				"BracketHighlighter: Swap Quotes"
+			],
+			[
+				"djpi",
+				"Django: Pip Install Packages"
+			],
+			[
+				"syntpy",
+				"Set Syntax: Python"
+			],
+			[
+				"djsv",
+				"Django: Set Virtual Environment"
+			],
+			[
+				"djsp",
+				"Django: Set Project Interpreter"
+			],
+			[
+				"ma",
+				"Django: Migrate App"
+			],
+			[
+				"djc",
+				"Django: Other Command"
+			],
+			[
+				"migratio",
+				"Django: Make Migration"
+			],
+			[
+				"djs",
+				"Django: Run Custom Server"
+			],
+			[
+				"package",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"kivy",
+				"Set Syntax: Kivy Syntax"
+			],
+			[
+				"djsvi",
+				"Django: Set Virtual Environment"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"beaut",
+				"HTMLBeautify"
+			],
+			[
+				"synhtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"synpytho",
+				"Set Syntax: Python"
+			],
+			[
+				"synphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"synbash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"synhtm\t",
+				"Set Syntax: HTML"
+			],
+			[
+				"bs3html",
+				"Snippet: bs3-html5-template"
+			],
+			[
+				"pep8",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"py",
+				"Set Syntax: Python"
+			],
+			[
+				"buil",
+				"Build With: Python"
+			],
+			[
+				"run",
+				"Anaconda: Run Project Tests"
+			],
+			[
+				"anar",
+				"Anaconda: Run Current Test"
+			],
+			[
+				"pytho",
+				"Set Syntax: Python"
+			]
+		],
+		"width": 674.0
+	},
+	"console":
+	{
+		"height": 236.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman/keyman",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman/keyman/keyman",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman/keyman/keys"
+	],
+	"file_history":
+	[
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman/keyman/keyman/settings.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman/keyman/app/models.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman/keyman/app/admin.py",
+		"/E/Setup/Coding/sublimetext3/sublime.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman/DjangoCommands.sublime-settings",
+		"/C/Users/HTL/AppData/Local/Temp/7zO8CAF8FCE/README.md",
+		"/C/Users/HTL/AppData/Local/Temp/7zO001ACD25/Markdown.sublime-syntax",
+		"/C/Users/HTL/AppData/Local/Temp/7zO8CA69E5D/django-commands.py",
+		"/C/Users/HTL/AppData/Local/Temp/7zE8CA9342D/README.md",
+		"/E/Setup/Coding/sublimetext3/Data/Installed Packages/Django Manage Commands.sublime-package",
+		"/E/Setup/Coding/sublimetext3/Data/Installed",
+		"/E/Setup/Coding/sublimetext3/Data/Installed Packages/Packages/Django",
+		"/E/Setup/Coding/sublimetext3/Data/Installed Packages/Manage",
+		"/E/Setup/Coding/sublimetext3/Data/Installed Packages/Commands.sublime-package",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman/keyman.sublime-project",
+		"/E/Setup/Coding/sublimetext3/Data/Packages/User/DjangoCommands.sublime-settings",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman/instance/config.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman/app/models.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman/run.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman/app/__init__.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman/config.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman/__init__.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/keyman/keyman.py",
+		"/C/Users/HTL/AppData/Roaming/Autodesk/Revit/Addins/2018/rpstest.addin",
+		"/F/Revit",
+		"/F/Revit 2018.1 SDK/Samples/UIAPI/CS/2018.1",
+		"/F/Revit 2018.1 SDK/Samples/UIAPI/CS/SDK/Samples/UIAPI/CS/UIAPI.addin",
+		"/F/Revit 2018.1 SDK/Samples/UIAPI/CS/SDK/Samples/UIAPI/CS/ExternalApplication.cs",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/standalone/HTLApp1.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/standalone/HTLApp.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/lib/htl/selection.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/test standalone.py",
+		"/D/HTL/Desktop/ironpython/rpw/test2.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Formwork.panel/CreateFormwork.pushbutton/script.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/CopyFormworkLevel.pushbutton/script.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Architecture.panel/FinishWallByRoom.pushbutton/script.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Architecture.panel/CreateFinishLayers.pushbutton/script.py",
+		"/C/Program Files (x86)/IronPython 2.7/Tools/Scripts/pyc.py",
+		"/D/HTL/Desktop/helloworld.xml",
+		"/C/Users/HTL/AppData/Roaming/Autodesk/Revit/Addins/2018/Extension1.addin",
+		"/D/HTL/Desktop/ironpython/HTLApp.py",
+		"/C/Program Files (x86)/IronPython 2.7/Lib/os.py",
+		"/D/HTL/Desktop/ironpython/test2.py",
+		"/D/HTL/Desktop/test2.py",
+		"/C/Users/HTL/AppData/Roaming/pyRevit/pyRevit-v4/pyRevit/pyrevitlib/rpw/__init__.py",
+		"/D/HTL/Desktop/Bài+tập+python.ipynb",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/lib/htl/__init__.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test.pushbutton/script.py",
+		"/F/Revit 2018.1 SDK/Samples/UIAPI/CS/SDK/Samples/UIAPI/CS/UIAPI.csproj",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Rebar.panel/Update Dim.pulldown/WithNumber.pushbutton/script.py",
+		"/E/Setup/Graphic/QiPressPortable/QiPress.ini",
+		"/E/Setup/Graphic/QiPressPortable/README.md",
+		"/D/HTL/Desktop/test.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Architecture.panel/FinishWallByRoom.pushbutton/extensions/htl.extension/HTL.tab/Architecture.panel/FinishWallByRoom.pushbutton/script.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Formwork.panel/CopyFormworkArea.pushbutton/script.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Rebar.panel/RebarFilter.pushbutton/script.py",
+		"/E/Setup/Coding/sublimetext3/Data/Packages/User/tekla.sublime-snippet",
+		"/C/ProgramData/Tekla Structures/2017/Environments/default/system/Name - Beam.SObjGrp",
+		"/C/ProgramData/Tekla Structures/2017/Environments/default/system/Material - Cast in place concrete.SObjGrp",
+		"/E/Setup/Coding/sublimetext3/Data/Packages/User/ironpython.sublime-build",
+		"/E/Setup/coding/sublime text 3/Data/Packages/User/tekla.sublime-snippet",
+		"/C/TeklaStructuresModels/CT04 - THAP B/attributes/+BEAM.SObjGrp",
+		"/E/Setup/coding/sublime text 3/Data/Packages/Bootstrap 3 Snippets/form/bs3-form-horizontal.sublime-snippet",
+		"/E/Setup/coding/sublime text 3/Data/Packages/User/ironpython.sublime-build",
+		"/E/Setup/coding/sublime text 3/Data/Packages/User/Python 3.sublime-build",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Modelling.panel/Join.pulldown/MassJoin.pushbutton/script.py",
+		"/D/UDIC/2. BIM/2. Hoc Tekla/HTL-Tekla Open API/test.py",
+		"//may10/NHAN TAI LIEU2/Multi Server/history.db",
+		"/D/HTL/Desktop/Dynamo 7.xml",
+		"/C/TeklaStructuresModels/CT04 - THAP B/UDIC_MATERIAL.lis",
+		"/C/ProgramData/Tekla Structures/2017/Environments/common/macros/modeling/testmacro.cs",
+		"/D/UDIC/2. BIM/2. Hoc Tekla/01. TEKLA CĂN BẢN/Macros/M_Fitting_Objects.cs",
+		"/D/UDIC/2. BIM/2. Hoc Tekla/01. TEKLA CĂN BẢN/Macros/M_Fitting_Objects.cs.pdb",
+		"/D/UDIC/2. BIM/2. Hoc Tekla/01. TEKLA CĂN BẢN/02 BAN VE/03 COMPONENT _ TEMPLATES/Step Footing.uel/Step Footing.uel",
+		"/C/TeklaStructuresModels/CT04 - THAP B/xslib.db1",
+		"/D/UDIC/2. BIM/2. Hoc Tekla/TEKLA - IA20/New model/xs_user.haild",
+		"/D/UDIC/2. BIM/2. Hoc Tekla/TEKLA - IA20/New model/xs_user.anhvt",
+		"/D/UDIC/2. BIM/2. Hoc Tekla/TEKLA - IA20/New model/Dell M4800_ComponentCatalogUserSettings.xml",
+		"/D/UDIC/2. BIM/2. Hoc Tekla/TEKLA - IA20/New model/SD5_THEP COT DAM Rebar_Schedule.pdf.rpt",
+		"/C/Program Files/Autodesk/Roombook Areabook Buildingbook for Revit 2018/Areabook/Backup/Addins/Areabook.addin",
+		"/D/Games/Aoe2/savegame/syncerr1.gam",
+		"/D/HTL/Desktop/sofistiklog/SOFiSTiK_BiMTOOLS_For_Revit_Log_50.txt",
+		"/C/Users/HTL/AppData/Local/Temp/SOFiSTiK_BiMTOOLS_For_Revit_Log_8.txt",
+		"/D/HTL/Desktop/sofistiklog/SOFiSTiK_BiMTOOLS_For_Revit_Log_0.txt",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Modelling.panel/ReplaceParameter.pushbutton/script.py",
+		"/C/Users/HTL/AppData/Local/Temp/SOFiSTiK_BiMTOOLS_For_Revit_Log_16.txt",
+		"/C/Users/HTL/AppData/Local/Autodesk/Revit/Autodesk Revit 2018/Journals/journal.0204.txt",
+		"/E/Setup/coding/winpython3/notebooks/Dynamo/Dynamo 3.ipynb",
+		"/D/HTL/Desktop/Book1.csv",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/_layout",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Join.panel/Join.pulldown/JoinByIDs.pushbutton/script.py",
+		"/C/Users/HTL/AppData/Roaming/RevitPythonShell2018/init.py",
+		"/C/Users/HTL/AppData/Local/Autodesk/Revit/Autodesk Revit 2018/Journals/journal.0193.txt",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Rebar.panel/SelectByName.pushbutton/script.py",
+		"/E/Setup/coding/winpython3/notebooks/PYTHON DATA/arr1.npy",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Rebar.panel/AssignPartition.pushbutton/script.py",
+		"//htl/share/Adobe Acrobat XI Pro 11.0.20/Crack/painter.nfo",
+		"//htl/share/Adobe Acrobat XI Pro 11.0.20/Crack/ADOBE_ACROBAT_PRO_DC_V2015_MULTI-XFORCE/x-force.nfo",
+		"//htl/share/Adobe Acrobat XI Pro 11.0.20/Crack/ADOBE_ACROBAT_PRO_DC_V2015_MULTI-XFORCE/Crack-Windows-DC/install.txt",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/TestGrid.pushbutton/script.py",
+		"/E/Setup/UCE/Autodesk/Revit/htl keyboardshortcut.xml",
+		"//htl/UDIC/2. BIM/dynamo/Formwork/1. Check face error.dyn",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/D/UDIC/2. BIM/3. CT04/1. KC CT04 Revit/Central File shared/CT04 - KC - Central_backup/CT04 - KC - Central.slog",
+		"/C/Users/HTL/.xlwings/xlwings.conf",
+		"/D/UDIC/2. BIM/3. CT04/1. KC CT04 Revit/Central File shared/CT04 - KC - Central_backup/users.dat",
+		"/D/Games/CS/cstrike/htl.cfg",
+		"/D/Games/CS/cstrike/userconfig.cfg",
+		"/D/Games/CS/cstrike/config.cfg",
+		"/D/Games/CS 1.6/cstrike/userconfig.cfg",
+		"/D/Games/CS 1.6/cstrike/config.cfg",
+		"/D/Games/CS 1.6/cstrike/htl.cfg",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Formwork.panel/Formwork.pushbutton/script.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/CopyFormworkArea.pushbutton/script.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Formwork.pushbutton/script.py",
+		"/C/ProgramData/Autodesk/ApplicationPlugins/sofistik_bimtools_2018.bundle/Contents/sofistik_bimtools.addin",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/FinishWallByRoom.pushbutton/script.py",
+		"//htl/UDIC/2. BIM/3. CT04/1. KC CT04 Revit/Issues/20170927 - face error/B dam.csv",
+		"/D/HTL/Desktop/test.csv",
+		"//htl/UDIC/2. BIM/3. CT04/1. KC CT04 Revit/Issues/20170927 - face error/A1.csv",
+		"/C/ProgramData/Autodesk/Revit/Addins/2018/Le Uy Vo Revit Tools.addin",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Rebar.panel/GroupRebar.pushbutton/script.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/Test1.pushbutton/script.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Formwork.panel/Formwork Paint.pulldown/Paint.pushbutton/script.py",
+		"/E/Setup/UCE/Autodesk/Revit/pyRevit extensions/htl.extension/HTL.tab/Test.panel/TestInterference.pushbutton/script.py",
+		"//htl/UDIC/2. BIM/3. CT04/1. KC CT04 Revit/Issues/INTERFERENCE/CT04 - KC - Central_htlcnn.html",
+		"/E/Setup/Coding/winpython3/projects/docman_model_design"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"set_interpreter",
+			"show_quick_panel"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "keyman/keyman/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								469,
+								469
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"git_savvy.repo_path": "E:\\Setup\\UCE\\Autodesk\\Revit\\pyRevit extensions\\htl.extension",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"show_definitions": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "keyman/keyman/wsgi.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"git_savvy.repo_path": "E:\\Setup\\UCE\\Autodesk\\Revit\\pyRevit extensions\\htl.extension",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"show_definitions": false,
+							"synced": false,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "keyman/keys/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								300,
+								300
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"git_savvy.repo_path": "E:\\Setup\\UCE\\Autodesk\\Revit\\pyRevit extensions\\htl.extension",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"show_definitions": false,
+							"synced": false,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "keyman/keys/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 97,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								42,
+								42
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"git_savvy.repo_path": "E:\\Setup\\UCE\\Autodesk\\Revit\\pyRevit extensions\\htl.extension",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"show_definitions": false,
+							"synced": false,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GitSavvy":
+	{
+		"height": 138.0
+	},
+	"output.autopep8":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 220.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/ironpython.sublime-build",
+	"project": "keyman.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\HTL\\Desktop\\upwork\\groups3.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 250.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

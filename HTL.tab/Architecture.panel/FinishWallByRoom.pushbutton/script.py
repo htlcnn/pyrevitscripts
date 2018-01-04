@@ -12,6 +12,7 @@ import Autodesk
 from Autodesk.Revit.DB import *
 from Autodesk.Revit.UI import Selection
 from itertools import izip
+import System
 
 
 class CategoriesFilter(Selection.ISelectionFilter):
@@ -25,7 +26,7 @@ def select_objects_by_category(*names):
     prompt = 'Pick {}'.format(', '.join(names))
     references = uidoc.Selection.PickObjects(Selection.ObjectType.Element,
                                            CategoriesFilter(names), prompt)
-    return [rpw.db.Element.from_id(reference.ElementId) for reference in references]
+    return (rpw.db.Element.from_id(reference.ElementId) for reference in references)
 
 
 def select_object_by_category(name):
@@ -36,13 +37,17 @@ def select_object_by_category(name):
 
 
 def get_boundaries(room):
-    ret = []
-    for segments in room.GetBoundarySegments(SpatialElementBoundaryOptions()):
-        for segment in segments:
-            wall = doc.GetElement(segment.ElementId)
-            curve = segment.GetCurve()
-            ret.append((wall, curve))
-    return ret
+    opt = SpatialElementBoundaryOptions()
+    opt.SpatialElementBoundaryLocation = SpatialElementBoundaryLocation.Finish
+    opt.StoreFreeBoundaryFaces = False
+    return room.GetBoundarySegments(opt)
+
+
+def curveloop_from_boundary(boundary):
+    curveloop = CurveLoop()
+    for segment in boundary:
+        curveloop.Append(segment.GetCurve())
+    return curveloop
 
 
 def form():
@@ -56,6 +61,12 @@ def form():
                   Button('Create Finish Walls')]
 
     ff = FlexForm('Create Finish Walls', components)
+    for c in ff.MainGrid.Children:
+        if isinstance(c, System.Windows.Controls.ComboBox):
+            c.SelectedIndex = 3
+            print(c.SelectedItem, type(c.SelectedItem))
+            print(c.SelectedValue, type(c.SelectedValue))
+            print(c.SelectedIndex, type(c.SelectedIndex))
     ff.show()
     if ff.values['wall_type_id'] and ff.values['wall_height']:
         try:
@@ -65,38 +76,58 @@ def form():
         except:
             return
 
+def is_inside_room(curveloop, room):
+    for curve in curveloop:
+        end0 = curve.GetEndPoint(0)
+        end1 = curve.GetEndPoint(1)
+        if room.IsPointInRoom(end0) and room.IsPointInRoom(end1):
+            continue
+        else:
+            return False
+    return True
 
-def create_finish_wall(wall_type, wall_height):
-    room = select_object_by_category('Rooms')
+
+def create_finish_wall(room, wall_type, wall_height):
     offset_distance = wall_type.parameters['Width'].AsDouble() * 0.5
-    new_walls = []
-    boundaries = get_boundaries(room)
-    with rpw.db.Transaction('Create Finish Wall'):
-        for wall, curve in boundaries:
-            new_curve = curve.CreateOffset(-offset_distance, XYZ().BasisZ)
-            new_wall = Wall.Create(doc, new_curve, wall_type.Id, room.LevelId,
-                                   wall_height/304.8, 0, 0, 0)
-            new_walls.append(new_wall)
-    with rpw.db.Transaction('Join old-new walls'):
-        for idx, new_wall in enumerate(new_walls):
-            old_wall = boundaries[idx][0]
-            try:
-                JoinGeometryUtils.JoinGeometry(doc, old_wall, new_wall)
-            except Exception as e:
-                print(e)
+    boundary_loops = get_boundaries(room)
+    # print(boundary_loops)
+    for boundary in boundary_loops:
+        curveloop = curveloop_from_boundary(boundary)
+
+        offset_curveloop = CurveLoop.CreateViaOffset(curveloop, offset_distance,
+                                                     curveloop.GetPlane().Normal)
+        if not is_inside_room(offset_curveloop, room):
+            offset_curveloop = CurveLoop.CreateViaOffset(curveloop, -offset_distance,
+                                                         curveloop.GetPlane().Normal)
+        new_walls = []
+        with rpw.db.Transaction('Create Finish Wall'):
+            for curve in offset_curveloop:
+                new_wall = Wall.Create(doc, curve, wall_type.Id, room.LevelId,
+                                       wall_height/304.8, 0, False, False)
+                new_walls.append(new_wall)
+        with rpw.db.Transaction('Join old-new walls'):
+            for idx, new_wall in enumerate(new_walls):
+                old_wall = doc.GetElement(boundary[idx].ElementId)
+                if old_wall:
+                    try:
+                        JoinGeometryUtils.JoinGeometry(doc, old_wall, new_wall)
+                    except Exception as e:
+                        print(e)
+        with rpw.db.Transaction('Delete short walls'):
+            for new_wall in new_walls:
+                length = new_wall.LookupParameter('Length').AsDouble() * 304.8
+                if length < 50:
+                    doc.Delete(new_wall.Id)
 
 
 def main():
     try:
         wall_type, wall_height = form()
+        rooms = select_objects_by_category('Rooms')
+        for room in rooms:
+            create_finish_wall(room, wall_type, wall_height)
     except Exception as e:
-        return
-
-    while True:
-        try:
-            create_finish_wall(wall_type, wall_height)
-        except Exception as e:
-            break
+        print(e)
 
 
 if __name__ == '__main__':

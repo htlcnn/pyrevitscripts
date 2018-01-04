@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+__title__='CreateRebarDetail'
 import clr
 clr.AddReference('RevitAPI')
 import Autodesk

@@ -13,25 +13,32 @@ def get_elements(family, selected=False):
     if selected:
         selection = rpw.ui.Selection()
         if family == "floor":
-            ret = rpw.db.Collector(of_class='Floor', where=lambda x: x.Id in selection.element_ids)
+            ret =  rpw.db.Collector(of_category='OST_Floors', is_type=False,
+                                    where=lambda x: x.Id in selection.element_ids)
         elif family == "wall":
-            ret = rpw.db.Collector(of_class='Wall', where=lambda x: x.Id in selection.element_ids)
+            ret = rpw.db.Collector(of_category='OST_Walls', is_type=False,
+                                   where=lambda x: x.Id in selection.element_ids)
         elif family == "column":
-            ret = rpw.db.Collector(of_category="OST_StructuralColumns", of_class="FamilyInstance",
+            ret = rpw.db.Collector(of_category="OST_StructuralColumns", is_type=False,
                                    where=lambda x: x.Id in selection.element_ids)
         elif family == "beam":
-            ret = rpw.db.Collector(of_category="OST_StructuralFraming", of_class="FamilyInstance",
+            ret = rpw.db.Collector(of_category="OST_StructuralFraming", is_type=False,
+                                   where=lambda x: x.Id in selection.element_ids)
+        elif family == "generic_model":
+            ret = rpw.db.Collector(of_category="OST_GenericModel", is_type=False,
                                    where=lambda x: x.Id in selection.element_ids)
         return ret
     else:
         if family == "floor":
-            return rpw.db.Collector(of_class="Floor")
+            return rpw.db.Collector(of_category='OST_Floors', is_type=False)
         elif family == "wall":
-            return rpw.db.Collector(of_class="Wall")
+            return rpw.db.Collector(of_category='OST_Walls', is_type=False)
         elif family == "column":
-            return rpw.db.Collector(of_category="OST_StructuralColumns", of_class="FamilyInstance")
+            return rpw.db.Collector(of_category="OST_StructuralColumns", is_type=False)
         elif family == "beam":
-            return rpw.db.Collector(of_category="OST_StructuralFraming", of_class="FamilyInstance")
+            return rpw.db.Collector(of_category="OST_StructuralFraming", is_type=False)
+        elif family == "generic_model":
+            return rpw.db.Collector(of_category="OST_GenericModel", is_type=False)
 
 def multijoin(fam1, fam2, selected=False):
     fam1 = fam1.lower()
@@ -52,13 +59,18 @@ def multijoin(fam1, fam2, selected=False):
 
 
 components = [Label('Cut Elements:'),
-            ComboBox('cut_element', {'Tường': 'wall', 'Cột': 'column', 'Dầm': 'beam', 'Sàn': 'floor'}),
+            ComboBox('cut_element', {'Sàn': 'floor',
+                                     'Cột': 'column',
+                                     'Dầm': 'beam',
+                                     'Tường': 'wall',
+                                     'Generic Model': 'generic_model',}),
             Separator(),
             Label('Elements to join:'),
-            CheckBox('join_wall', 'Tường'),
+            CheckBox('join_floor', 'Sàn'),
             CheckBox('join_column', 'Cột'),
             CheckBox('join_beam', 'Dầm'),
-            CheckBox('join_floor', 'Sàn'),
+            CheckBox('join_wall', 'Tường'),
+            CheckBox('join_generic_model', 'Generic Model'),
             Button('Join')]
 
 if rpw.ui.Selection():
