@@ -8,7 +8,6 @@ clr.AddReference('RevitAPI')
 import Autodesk
 
 import rpw
-from rpw import doc, uidoc
 from rpw.ui.forms import Button, CheckBox, FlexForm, Label, TextBox
 from Autodesk.Revit.DB import *
 
@@ -98,6 +97,11 @@ def on_click(sender, e):
         textbox.IsEnabled = False
 
 def main():
+    uiapp = __revit__
+    uidoc = uiapp.ActiveUIDocument
+    app = uiapp.Application
+    doc = uidoc.Document
+
     components = [
                   CheckBox('create_elements', 'Create Formwork Elements', on_click=on_click),
                   Label('Thickness (mm)'),
