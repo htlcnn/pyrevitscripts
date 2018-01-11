@@ -52,7 +52,7 @@ def curveloop_from_boundary(boundary):
 
 def form():
     wall_types = rpw.db.Collector(of_category='Walls', is_type=True,
-                                  where=lambda x: x.GetParameters('Width')).wrapped_elements
+                                  where=lambda x: x.GetParameters('Width')).get_elements()
     components = [Label('Finish wall type:'),
                   ComboBox('wall_type_id',
                            {wt.parameters['Type Name'].AsString(): wt.Id for wt in wall_types}),
@@ -61,12 +61,6 @@ def form():
                   Button('Create Finish Walls')]
 
     ff = FlexForm('Create Finish Walls', components)
-    for c in ff.MainGrid.Children:
-        if isinstance(c, System.Windows.Controls.ComboBox):
-            c.SelectedIndex = 3
-            print(c.SelectedItem, type(c.SelectedItem))
-            print(c.SelectedValue, type(c.SelectedValue))
-            print(c.SelectedIndex, type(c.SelectedIndex))
     ff.show()
     if ff.values['wall_type_id'] and ff.values['wall_height']:
         try:

@@ -14,19 +14,19 @@ def get_elements(family, selected=False):
         selection = rpw.ui.Selection()
         if family == "floor":
             ret =  rpw.db.Collector(of_category='OST_Floors', is_type=False,
-                                    where=lambda x: x.Id in selection.element_ids)
+                                    where=lambda x: x.Id in selection.get_element_ids())
         elif family == "wall":
             ret = rpw.db.Collector(of_category='OST_Walls', is_type=False,
-                                   where=lambda x: x.Id in selection.element_ids)
+                                   where=lambda x: x.Id in selection.get_element_ids())
         elif family == "column":
             ret = rpw.db.Collector(of_category="OST_StructuralColumns", is_type=False,
-                                   where=lambda x: x.Id in selection.element_ids)
+                                   where=lambda x: x.Id in selection.get_element_ids())
         elif family == "beam":
             ret = rpw.db.Collector(of_category="OST_StructuralFraming", is_type=False,
-                                   where=lambda x: x.Id in selection.element_ids)
+                                   where=lambda x: x.Id in selection.get_element_ids())
         elif family == "generic_model":
             ret = rpw.db.Collector(of_category="OST_GenericModel", is_type=False,
-                                   where=lambda x: x.Id in selection.element_ids)
+                                   where=lambda x: x.Id in selection.get_element_ids())
         return ret
     else:
         if family == "floor":
@@ -45,7 +45,7 @@ def multijoin(fam1, fam2, selected=False):
     fam2 = fam2.lower()
     with rpw.db.Transaction("join {} and {}".format(fam1, fam2).upper()):
         elements1 = get_elements(fam1, selected)
-        for e1 in elements1.elements:
+        for e1 in elements1.get_elements():
             bb = e1.BoundingBox[doc.ActiveView]
             outline = Outline(bb.Min, bb.Max)
             bbfilter = BoundingBoxIntersectsFilter(outline)

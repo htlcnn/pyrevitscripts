@@ -37,7 +37,7 @@ def add_shared_parameters(sp_file, params, categories):
         for p in params:
             app.SharedParametersFilename = sp_file.name
             definition_file = app.OpenSharedParameterFile()
-            group = definition_file.Groups.Item['UDIC-KetCau']
+            group = definition_file.Groups.Item['UDIC']
             definition = group.Definitions.Item[p]
             try:
                 category_set = CategorySet()
@@ -68,13 +68,17 @@ def main():
         c1 = [BuiltInCategory.OST_GenericModel]
         add_shared_parameters(sp_file, p1, c1)
 
-        p2 = ['UDIC_FormworkArea_Side', 'UDIC_FormworkArea_Bottom', 'UDIC_Name']
+        p2 = ['UDIC_FormworkArea_Side', 'UDIC_FormworkArea_Bottom', 'UDIC_Name', 'UDIC_Group']
         c2 = [
               BuiltInCategory.OST_Floors, BuiltInCategory.OST_GenericModel,
               BuiltInCategory.OST_StructuralColumns, BuiltInCategory.OST_StructuralFoundation,
               BuiltInCategory.OST_StructuralFraming, BuiltInCategory.OST_Walls
              ]
         add_shared_parameters(sp_file, p2, c2)
+
+        p3 = ['UDIC_Wall_Width']
+        c3 = [BuiltInCategory.OST_Doors, BuiltInCategory.OST_Windows]
+        add_shared_parameters(sp_file, p3, c3)
 
 
 if __name__ == '__main__':
